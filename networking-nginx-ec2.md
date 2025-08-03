@@ -23,7 +23,8 @@ This project demonstrates how I deployed a fully functional **NGINX web server**
 3. Connected to the instance using SSH:
    ```bash
    ssh -i my-key.pem ec2-user@<public-ip>
-2. Install and Start NGINX
+   
+4. Install and Start NGINX
 
 sudo yum update -y
 sudo yum install nginx -y
@@ -31,7 +32,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 Verified by visiting the EC2 Public IP in the browser.
 
-3. Configure Route 53
+5. Configure Route 53
 Registered a domain Abdirahmanweb.net.
 
 Created an A record:
@@ -44,7 +45,7 @@ Value: EC2 Public IP
 
 Waited for DNS propagation.
 
-4. Test the Setup
+6. Test the Setup
 Accessed the site via: http://nginx.Abdirahmanweb.net
 
 Verified NGINX Welcome Page loads successfully.
@@ -52,13 +53,4 @@ Verified NGINX Welcome Page loads successfully.
 📸 Project Outcome
 Successfully hosted a web page on AWS using NGINX, accessible via a custom domain.
 
-🛠️ Technologies Used
-AWS EC2
-
-Amazon Linux 2023
-
-NGINX
-
-Route 53
-
-SSH
+![alt text](image.png)
